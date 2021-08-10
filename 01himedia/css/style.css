@@ -133,6 +133,23 @@
     .sec2st .txt a{font-size:14px;color: #1c84ff;font-weight: bold;}
 
 
+    /* footer  */
+    #footerWrap{background: #5e5e5e}
+    #footerWrap .footer1st{background: #4d4d4d;padding:10px 16px;}
+    #footerWrap .footer1st li{
+        float: left;font-size:12px;width: calc(100% / 3);
+    }
+    #footerWrap .footer1st li a{display: block;text-align: center;color: #fff;line-height:40px;}
+
+    #footerWrap .footer1st .top{
+        position: fixed;right:20px;bottom:50px;
+        width: 40px;height: 40px;background: orange;
+        border-radius: 10px;text-align: center;line-height:40px;
+    }
+
+    #footerWrap .footer2st{padding:30px 20px;text-align: center;font-size:12px;}
+    #footerWrap .footer2st h2{margin-bottom:20px;font-size:18px;}
+    #footerWrap .footer2st .footerAdd{font-style:normal;color:#fff}
 
 }  /* mobile */
 
@@ -228,6 +245,30 @@
     .sec2st .txt p{margin-bottom:5px;}
     .sec2st .txt a{font-size:14px;color: #1c84ff;font-weight: bold;}
 
+
+    /* footer  */
+    #footerWrap{background: #5e5e5e}
+    #footerWrap .footer1st{background: #4d4d4d;}
+    #footerWrap .footer1st .footer{width: 980px;margin: 0 auto;}
+    #footerWrap .footer1st .footer ul{float: left;}
+    #footerWrap .footer1st li{
+        float: left;
+    }
+    #footerWrap .footer1st li a{display: block;text-align: center;color: #fff;line-height:40px;padding:0 15px;position: relative;}
+    #footerWrap .footer1st li a:after{
+        content:"";display: block;position: absolute;width: 1px;height: 15px;background: #fff;top:12px;right: 0;
+    }
+    #footerWrap .footer1st li:first-child a{padding-left:0;}
+    #footerWrap .footer1st li:last-child a:after{content:"";display: none;}
+    
+    #footerWrap .footer1st .top{
+        float:right;background: orange; width:50px;
+       text-align: center;line-height:40px;
+    }
+
+    #footerWrap .footer2st{width: 980px;margin: 0 auto;padding:20px 0;}
+    #footerWrap .footer2st h2{float: left;margin-right:30px;}
+    #footerWrap .footer2st .footerAdd{float: left; font-style:normal;color:#fff}
 
 
 
