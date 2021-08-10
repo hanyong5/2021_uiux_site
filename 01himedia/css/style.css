@@ -13,7 +13,26 @@
 .toggle div.bar2{top:50%;margin-top:-1.5px;}
 .toggle div.bar3{bottom:8px}
 
+.txt h3{font-size: 18px;}
+.txt p{font-size: 14px;}
 
+
+.cir:after{
+    content:"";display: block;width: 24px;height: 2px;
+    background: #fff;
+    position: absolute; left: 50%;top: 50%;
+    margin-left: -12px;margin-top:-1px;
+}
+.cir:before{
+    content:"";display: block;position: absolute;
+    width: 2px;height: 24px;background: #fff;
+    left: 50%;top: 50%;margin-left: -1px;margin-top: -12px;
+}
+
+
+/* common  */
+.mb5{margin-bottom: 5px !important;}
+.mb16{margin-bottom: 16px !important;}
 
 
 
@@ -62,6 +81,39 @@
     .bannerWrap li:nth-child(3){background: #4B8CE0;}
     .bannerWrap li:nth-child(4){background: #3DB5F2;}
     .bannerWrap li:nth-child(5){display: none;}
+
+    /* content  */
+    .content{padding: 0 16px;}
+    .content li{
+        width: 100%;
+        border-radius:0 10px 0 10px;overflow: hidden;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        position: relative;
+    }
+    .content li img{width: 100%;}
+    .content .txt{padding: 18px 16px;}
+    .content .circle{
+        width: 50px;height: 50px;background: #aaa;
+        position: absolute;right: 16px;bottom: 25px;
+        border-radius:25px
+    }
+    .content li:last-child{display: none;}
+
+
+
+
+    /* .content .circle .bar1{
+        width: 30px;height: 2px;background: #fff;
+        position: absolute;left: 50%;top: 50%;
+        margin-left: -15px;margin-top: -1px;
+    }
+    .content .circle .bar2{
+        width: 2px;height: 30px;background: #fff;
+        position: absolute;left: 50%;top: 50%;
+        margin-left: -1px;margin-top:-15px;
+    } */
+
+
 }  /* mobile */
 
 
