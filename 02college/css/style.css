@@ -52,4 +52,15 @@ body{
 }
 
 .container{width: 1200px;margin: 0 auto;background: #ddd;}
-.container>ul>li{float: left;}
+.container>ul>li{float: left;width: 25%;height: 225px;}
+
+.container>ul>li:nth-child(2n){background:pink;}
+
+.container>ul>li:nth-child(1){width: 75%;height: 450px;}
+.container>ul>li:nth-child(2){height: 450px;}
+.container>ul>li:nth-child(3){}
+.container>ul>li:nth-child(4){}
+.container>ul>li:nth-child(5){}
+.container>ul>li:nth-child(6){}
+.container>ul>li:nth-child(7){}
+.container>ul>li:nth-child(8){width: 75%;}

@@ -15,6 +15,14 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".slider1").bxSlider();
+            $(".slider2").bxSlider();
+        })
+    </script>
+
   
 </head>
 <body>
@@ -42,14 +50,25 @@
         <section class="title"></section>
         <div class="container">
             <ul class="clearfix">
-                <li>1</li>
+                <li>
+                    <ul class="slider1">
+                        <li><img src="images/slide01.png" alt=""></li>
+                        <li><img src="images/slide02.png" alt=""></li>
+                        <li><img src="images/slide03.png" alt=""></li>
+                    </ul>
+                </li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
                 <li>6</li>
                 <li>7</li>
-                <li>8</li>
+                <li>
+                    <ul class="slider2">
+                        <li><img src="images/banner01_01.png" alt=""></li>
+                        <li><img src="images/banner01_02.png" alt=""></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
