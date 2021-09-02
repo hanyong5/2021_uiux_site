@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.headerTopWrap{background: #0763a2 url(../images/topbg01.jpg) no-repeat center;}
+.headerTop{width: 980px;margin: 0 auto;color:white;position: relative;height: 90px;
+    _background: #000;}
+
+
+/* flex  */
+.headerTop{
+    display: flex;justify-content: space-between;align-items:center;
+    
+}
+h1{width: 100px;height: 50px;background: skyblue;}
+.search{
+    width: 200px;height:50px;background: orange;
+}
+.snsMenu{width: 300px;height:50px;background: green;}
+
+.headerBt{background: orange;}
+.headerBt li{float: left;text-align: center;line-height:40px;width:calc(100% / 6)}
+.headerBt li.active{background: gray;}
+.headerBt ul{margin: 0 auto;width: 980px;}
+
+
+
+/* index content  */
+.content{
+    height:1000px;background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* footer  */
+.footer{
+    height: 300px;
+}
+.footer address{width: 980px;margin: 0 auto}
+
+
+/* sub company  */
+.subContent .subImg{
+    height: 300px;
+    display: flex;justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subContent .subImgTitle{text-align: center;}
+.subContent .subImgTitle h3{font-size: 2em;}
+.subContent .subImgTitle h3:after{
+    content:"";display: block;
+    width: 80%;height: 2px;background: #000;
+    margin: 10px auto;
+}
+
+
+
+.subContent.company .subImg{
+    background-image: url(../images/subimg01.jpg);
+    
+}
+
+.subContent.cityTour .subImg{
+    background-image: url(../images/subimg02.jpg);
+}
