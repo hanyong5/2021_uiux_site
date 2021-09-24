@@ -7,7 +7,7 @@
     <title>parallax</title>
     <link rel="stylesheet" href="css/reset.css">
     <style>
-        body{height: 400vh;background: #210002;}
+        body{height: 400vh;background: #210002;overflow-x:hidden;}
         .header{
             height: 100vh;position: relative;overflow: hidden;
             background: #FEAE1B;
@@ -18,7 +18,7 @@
             
             background-position: center bottom;
             background-repeat: no-repeat;
-            background-size: auto 1038px;
+            background-size: auto 900px;
         }
         .p0{background-image: url(images/parallax0.png);}
         .p1{background-image: url(images/parallax1.png);}
@@ -30,7 +30,13 @@
         .p7{background-image: url(images/parallax7.png);}
         .p8{background-image: url(images/parallax8.png);}
 
-        .container{width: 1200px;margin: 0 auto;background: white;}
+        .container{width: 1200px;margin: 0 auto;background: white;trans}
+
+        @media screen and (max-width:700px){
+            .layer{
+            background-size: auto 650px;
+            }
+        }
     </style>
 </head>
 <body>
