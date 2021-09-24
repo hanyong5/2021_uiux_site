@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>parallax</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <style>
         body{height: 400vh;background: #210002;overflow-x:hidden;}
@@ -39,6 +40,15 @@
             .container{width: 90%;}
         }
     </style>
+    <script>
+
+        $(function() {
+
+            Loading();	
+            setTimeout("closeLoading()", 3000);
+
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -80,6 +90,36 @@
 
 
         })
+
+
+        function Loading() {
+            var maskHeight = $(document).height();
+            var maskWidth = window.document.body.clientWidth;
+
+            var mask = "<div id='mask' style='position:fixed; z-index:9000; background-color:#fff; display:none; left:0; top:0;'></div>";
+            var loadingImg = '';
+
+            loadingImg += "<div id='loadingImg' style='position:fixed; left:50%; top:40%; display:none; z-index:10000;'>";
+            loadingImg += "    <img src='images/img.gif'/>";
+            loadingImg += "</div>";
+
+            $('body').append(mask).append(loadingImg);
+
+            $('#mask').css({
+                'width' : maskWidth
+                , 'height': maskHeight
+                , 'opacity' : '1'
+            });
+
+            $('#mask').show();
+            $('#loadingImg').show();
+        }
+
+
+        function closeLoading() {
+            $('#mask, #loadingImg').fadeOut();
+            $('#mask, #loadingImg').fadeOut(); 
+        }
     </script>
 </body>
 </html>
