@@ -122,7 +122,7 @@ html,body{height: 100%;}
 
     #header_top{
         width: 1240px;background: pink;z-index: 1;
-        position: fixed;left:50%;transform: translateX(-50%);top:20px;
+        position: absolute;left:50%;transform: translateX(-50%);top:20px;
         display: flex;justify-content: space-between;align-items:center
     }
     
@@ -165,7 +165,7 @@ html,body{height: 100%;}
 
     #header_top{
         background: pink;padding: 0 16px;z-index:99999;
-        position: fixed;width: 100%;
+        _position: fixed;width: 100%;
         display: flex;justify-content: space-between;align-items:center
     }
     
