@@ -13,3 +13,9 @@
     box-shadow:10px 10px 25px rgba(0,0,0,0.4)
 }
 #headerWrap .video .txt{position: absolute;bottom: 10px;left: 30px;}
+#headerWrap .card-view{
+    border-radius: 5px;overflow: hidden;
+    box-shadow:10px 10px 25px rgba(0,0,0,0.4)
+}
+
+.slider .slider-title{color:#7d97ad; font-size: 15px;}
