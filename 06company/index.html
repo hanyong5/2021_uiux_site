@@ -42,6 +42,7 @@
             background:var(--bg-color1);text-align: center;line-height: 35px;
             border-radius: 20px;
         }
+        .customer .item{border-radius:5px}
         .footer .icon a:hover{box-shadow: var(--box-shadow);}
         .footer .icon img{width: 15px;}
 
@@ -205,13 +206,14 @@
           <div class="container py-5">
               <h2 class="text-center mb-3">CUSTOMER</h2>
               <div class="owl-carousel owl-theme">
-                  <div class="item d-flex p-4 bg-danger text-white">
-                      <img src="assets/user.svg" alt="" class="img-fluid" style="width:150px">
-                      <div class="ml-4">
+                  <div class="item d-flex p-4 bg-danger text-white flex-row flex-lg-column">
+                      <img src="assets/user.svg" alt="" class="img-fluid d-block m-auto" style="width:150px">
+                      <div class="ml-4 ml-lg-0">
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, aut.</p>
-                          <p><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
+                          <p class="d-lg-none"><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
                       </div>
                   </div>
+                  
               </div>
           </div>
       </div>
@@ -260,6 +262,8 @@
                 $(".headerWrap").removeClass("fixed-top")
             }
         });
+        
+        // isotope
         const btns = $(".portfolio .btn-group .btn");
         btns.click(function(){
             let i = $(this).index()
@@ -272,13 +276,16 @@
                 filter:selector
             })
         })
-
+        // isotope load
         window.onload = function(){
             $(".portfolio .btn-group #btn1").trigger("click");
         }
 
+        // light box - modal
         $(".portfolio .row .popup_link").magnificPopup({type:"image"})
 
+        
+        // slider 
         $(".customer .owl-carousel").owlCarousel({
             loop:true,
             margin:10,
@@ -287,8 +294,8 @@
                 0:{
                     items:1
                 },
-                768:{
-                    items:2
+                992:{
+                    items:4
                 }
             }
         })
