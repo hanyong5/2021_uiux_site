@@ -18,4 +18,15 @@
     box-shadow:10px 10px 25px rgba(0,0,0,0.4)
 }
 
+.slider .row{position: relative;}
+.slider .row h4{font-weight: normal;font-size: 18px;}
 .slider .slider-title{color:#7d97ad; font-size: 15px;}
+.slider .swiper-next{
+    position: absolute;top:50%;transform:translateY(-50%);right: 0;
+    width: 20px;height: 38px;background-image: url(../images/right-arrow.svg);
+}
+.slider .swiper-prev{
+    position: absolute;top:50%;transform:translateY(-50%);left: 0;
+    width: 20px;height: 38px;background-image: url(../images/left-arrow.svg);
+}
+
